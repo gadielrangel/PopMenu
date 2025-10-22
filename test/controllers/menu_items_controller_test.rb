@@ -12,7 +12,7 @@ class MenuItemsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create menu_item" do
     assert_difference("MenuItem.count") do
-      post menu_items_url, params: { menu_item: { menu_id: @menu_item.menu_id, name: @menu_item.name, price: @menu_item.price } }, as: :json
+      post menu_items_url, params: { menu_item: { name: "Pizza", price: @menu_item.price } }, as: :json
     end
 
     assert_response :created
@@ -24,7 +24,7 @@ class MenuItemsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update menu_item" do
-    patch menu_item_url(@menu_item), params: { menu_item: { menu_id: @menu_item.menu_id, name: @menu_item.name, price: @menu_item.price } }, as: :json
+    patch menu_item_url(@menu_item), params: { menu_item: { name: @menu_item.name, price: @menu_item.price } }, as: :json
     assert_response :success
   end
 

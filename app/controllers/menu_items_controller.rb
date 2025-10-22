@@ -46,6 +46,6 @@ class MenuItemsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def menu_item_params
-      params.expect(menu_item: [ :name, :price, :menu_id ])
+      params.expect(menu_item: [ :name, :price ])
     end
 end

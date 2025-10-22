@@ -1,5 +1,8 @@
 class MenuItem < ApplicationRecord
-  belongs_to :menu
+  has_many :menu_entries, dependent: :destroy
+  has_many :menus, through: :menu_entries
 
-  validates_presence_of :name, :price, :menu_id
+  validates_presence_of :name, :price
+
+  validates_uniqueness_of :name
 end

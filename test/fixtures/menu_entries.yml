@@ -1,9 +1,9 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: Burger
-  price: 10
+  menu: one
+  menu_item: one
 
 two:
-  name: Fries
-  price: 5
+  menu: two
+  menu_item: two

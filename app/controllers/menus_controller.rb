@@ -3,7 +3,7 @@ class MenusController < ApplicationController
 
   # GET /menus
   def index
-    @menus = Menu.joins(:menu_items)
+    @menus = Menu.includes(:menu_items).all
 
     render json: @menus, include: :menu_items
   end
