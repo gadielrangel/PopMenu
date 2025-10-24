@@ -6,19 +6,19 @@ A Rails API application for managing restaurants, menus, and menu items with JSO
 
 This project implements all requirements from the PopMenu interview project:
 
-### Level 1: Basics ✅
+### Level 1: Basics
 - Menu and MenuItem models with typical restaurant data
 - Menu has many MenuItems (many-to-many relationship)
 - RESTful endpoints for all models
 - Comprehensive unit test coverage
 
-### Level 2: Multiple Menus ✅
+### Level 2: Multiple Menus
 - Restaurant model with multiple Menus
 - MenuItems are not duplicated (uniqueness by name + price)
 - MenuItems can appear on multiple Menus within a Restaurant
 - RESTful endpoints for Restaurant data
 
-### Level 3: JSON Import ✅
+### Level 3: JSON Import
 - HTTP endpoint for JSON file import
 - MenuImportService for data conversion and persistence
 - Model validations with normalization
