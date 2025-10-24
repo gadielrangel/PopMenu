@@ -46,7 +46,7 @@ This project implements all requirements from the PopMenu interview project:
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/gadielrangel/PopMenu
 cd PopMenu
 ```
 
@@ -416,8 +416,6 @@ bin/rails test test/models/menu_item_test.rb:10
 - Controller actions and error handling
 - Service object behavior (import success/failure scenarios)
 - Edge cases (empty data, invalid JSON, validation failures)
-
-**Current Status:** 41 tests, 98 assertions, 0 failures
 
 ## Error Handling
 
