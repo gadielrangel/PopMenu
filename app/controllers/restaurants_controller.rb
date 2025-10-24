@@ -42,7 +42,7 @@ class RestaurantsController < ApplicationController
   def import
     # Check file size limit before reading
     max_size = 10.megabytes
-    content_length = request.headers['Content-Length'].to_i
+    content_length = request.headers["Content-Length"].to_i
 
     if content_length > max_size
       return render json: {
